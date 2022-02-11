@@ -1,3 +1,58 @@
 <html>
-
+<style>
+.p{
+	font-family: Trebuchet MS
+}
+.navbar {
+	margin:auto;
+	width: 100%;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Trebuchet MS;
+}
+.cell {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.h1{
+	padding-right: 20%;
+	font-size: 26px;
+	font-family: Trebuchet MS
+}
+</style>
+<table class="navbar">
+	<tr>
+		<th class="h1">HOMETOWN HISTORIES</th>
+	</tr>
+</table>
+<table class="navbar">
+	<tr>
+		<th class="cell">HOME</th>
+		<th class="cell">STORIES</th>
+		<th class="cell">SUPPORT</th>
+		<th class="cell">ABOUT US</th>
+	</tr>
+</table>
+<br>
+<br>
+<table>
+	<tr>
+		<th>Write down your favorite story from your hometown and share it with other students from your school!</th>
+	</tr>
+	<tr>
+		<th>
+			
+			<form id="storysub">
+				
+				<br><br><label for="story">What story would you like to share?</label><br>
+				<textarea name="story" form="storysub" id="story" rows=5 cols=30></textarea><br><br>
+				<label for="name">Story by:</label>
+				<input type="text" id="name"><br>
+				<input type="submit">
+			</form>
+		</th>
+	</tr>
+</table>
 </html>
