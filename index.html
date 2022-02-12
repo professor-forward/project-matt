@@ -1,5 +1,17 @@
 <html>
+<head>
 <style>
+body{
+
+	font-family: Trebuchet MS;
+}
+.bg{
+	background-image: url("background.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: repeat-y;
+	background-size: cover;
+}
 .p{
 	font-family: Trebuchet MS
 }
@@ -10,22 +22,22 @@
 	border-top: 1px solid black;
 	padding-left: 10px;
 	padding-right: 10px;
-	font-family: Trebuchet MS;
+	background-color: #C14975;
 }
 .cell {
 	padding-left: 3px;
 	padding-right: 3px;
 }
 .h1{
-	padding-right: 20%;
+	padding-top: 5px;
 	font-size: 26px;
-	font-family: Trebuchet MS
 }
 .leftTable{
 	padding-bottom:10px;
 	margin-left:5%;
 	border-collapse: collapse;
 	width:30%;
+
 }
 .maps{
 	width:30%;
@@ -37,6 +49,7 @@
 .leftPane{
 	border: 2px solid black;
 	padding-left: 5px;
+	background-color: #FCEBDA;
 }
 .rightTitle{
 	text-align: center;
@@ -45,6 +58,8 @@
 	padding: 5px;
 }
 </style>
+</head>
+<body class="bg">
 <table class="navbar">
 	<tr>
 		<th class="h1">HOMETOWN HISTORIES</th>
@@ -67,16 +82,17 @@
 			<table class="leftTable">
 				<tr>
 					<th class="maps">
+						<img src="mapsMockup.jpg" style="width:300px;height:250px;padding: 5px;padding-right: 15px">
 						<label for="loc">Add location?</label>
 						<input type="checkbox" form="storysub" id="loc">
-						<img src="mapsMockup.jpg" style="width:300px;height:250px;">
+						
 					</th>
 					<th class="sub">
 						
 						<form id="storysub">
 							<br><br>
-							<label for="story">What story would you like to share?</label>
-							<br>
+							<label for="story">Share your story!</label>
+							<br><br>
 							<textarea name="story" form="storysub" id="story" rows=5 cols=30 required></textarea><br><br>
 							<label for="name">Story by:</label>
 							<input type="text" id="name"><br>
@@ -105,14 +121,13 @@
 		</td>
 		<td style="width:5%;"></td>
 	</tr>
-	<tr>
-		<td><br><br><br><br><br><br><br><br></td>
-	</tr>
-	<tr>
-		<td>
-			<h2>ABOUT US</h2>
-		</td>
-	</tr>
 </table>
-
+<br><br><br><br><br><br><br><br>
+<div style="text-align: center;">
+	<h2>ABOUT US</h2>
+</div>
+<div style="padding-left: 30%;padding-right: 30%">
+	Hometown Histories is a passion project originally designed by Matt Tippin (#300066841) for CSI3140, Winter 2022. The intent of this project is to provide uOttawa students a safe and interactive way to share the varied histories of the towns they grew up in with other uOttawa students.
+</div>
+</body>
 </html>
