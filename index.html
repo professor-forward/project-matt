@@ -21,6 +21,29 @@
 	font-size: 26px;
 	font-family: Trebuchet MS
 }
+.leftTable{
+	padding-bottom:10px;
+	margin-left:5%;
+	border-collapse: collapse;
+	width:30%;
+}
+.maps{
+	width:30%;
+	padding-left: 10px;
+}
+.sub{
+	padding-right: 25px;
+}
+.leftPane{
+	border: 2px solid black;
+	padding-left: 5px;
+}
+.rightTitle{
+	text-align: center;
+}
+.rightContent{
+	padding: 5px;
+}
 </style>
 <table class="navbar">
 	<tr>
@@ -37,22 +60,59 @@
 </table>
 <br>
 <br>
-<table>
+<table class="contentPane">
 	<tr>
-		<th>Write down your favorite story from your hometown and share it with other students from your school!</th>
+		<td style="width:5%"></td>
+		<td class="leftPane">
+			<table class="leftTable">
+				<tr>
+					<th class="maps">
+						<label for="loc">Add location?</label>
+						<input type="checkbox" form="storysub" id="loc">
+						<img src="mapsMockup.jpg" style="width:300px;height:250px;">
+					</th>
+					<th class="sub">
+						
+						<form id="storysub">
+							<br><br>
+							<label for="story">What story would you like to share?</label>
+							<br>
+							<textarea name="story" form="storysub" id="story" rows=5 cols=30 required></textarea><br><br>
+							<label for="name">Story by:</label>
+							<input type="text" id="name"><br>
+							<input type="submit">
+						</form>
+					</th>
+				</tr>
+			</table>
+		</td>
+		<td style="width: 20%;"></td>
+		<td>
+			<table class="rightTable">
+				<tr>
+					<td class="rightTitle">
+						<h2>STORY OF THE WEEK</h2>
+					</td>
+				</tr>
+				<tr>
+					<td class="rightContent">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare ultrices sollicitudin. Phasellus ultrices non leo a dictum. Donec volutpat volutpat massa, quis commodo erat ornare eget. Maecenas bibendum ut nunc at congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vehicula elit at orci iaculis, sed dapibus neque finibus. Nullam turpis tellus, rhoncus sed metus ut, auctor vestibulum mauris. In egestas scelerisque turpis, in tristique urna facilisis at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur auctor bibendum mauris imperdiet rutrum. Proin gravida nisl sit amet tempor posuere. Maecenas tincidunt eros non libero vestibulum mattis.
+
+						Nunc congue nec sapien molestie tristique. Nunc ut nibh quam. Integer dapibus, risus a ultrices tincidunt, turpis tellus fringilla nibh, in finibus urna dolor nec ex. Etiam at nibh non lorem tempus dictum. Donec eleifend lorem sit amet ante lacinia tincidunt. Aliquam fermentum magna a nulla scelerisque auctor. Cras dictum sit amet quam sit amet pulvinar. Nullam pulvinar urna lectus, ac vulputate augue pretium quis. Nunc est lectus, euismod nec dolor vitae, cursus maximus odio. In sit amet velit rutrum, aliquam dolor ut, bibendum nisi. Phasellus fringilla diam justo. Nam sit amet purus nec ipsum rhoncus egestas. In vestibulum suscipit neque at faucibus. Proin porttitor erat lacus, quis bibendum enim scelerisque sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width:5%;"></td>
 	</tr>
 	<tr>
-		<th>
-			
-			<form id="storysub">
-				
-				<br><br><label for="story">What story would you like to share?</label><br>
-				<textarea name="story" form="storysub" id="story" rows=5 cols=30></textarea><br><br>
-				<label for="name">Story by:</label>
-				<input type="text" id="name"><br>
-				<input type="submit">
-			</form>
-		</th>
+		<td><br><br><br><br><br><br><br><br></td>
+	</tr>
+	<tr>
+		<td>
+			<h2>ABOUT US</h2>
+		</td>
 	</tr>
 </table>
+
 </html>
